@@ -15,3 +15,23 @@ This project analyzes retail order data to derive insights into sales performanc
 2. **Install Dependencies**:
    ```bash
    pip install pandas sqlalchemy pymysql kaggle
+3. Kaggle Setup:
+
+Upload your Kaggle API token to ~/.kaggle/kaggle.json.
+
+Database Configuration:
+
+4. Create a MySQL database named Order_Analysis.
+
+Update the connection string in Analysis.ipynb with your credentials:
+
+5. python
+Copy
+engine = sal.create_engine("mysql+pymysql://<USER>:<PASSWORD>@localhost/Order_Analysis")
+Run the Jupyter Notebook:
+
+Execute Analysis.ipynb to download data, clean it, and load it into MySQL.
+
+6. Execute SQL Queries:
+
+Run queries from sql_code.sql to generate insights.
